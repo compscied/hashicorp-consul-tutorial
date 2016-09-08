@@ -15,7 +15,7 @@ Consul is key/value store framework for distributed services discovery, configur
 - unzip consul*.zip
 
 **Run consul**
--./consul
+- ./consul
 
 You should see output
 ~~~~~~~
@@ -44,6 +44,7 @@ Available commands are:
   
 **Run Consul Agent**
 - $ consul agent -dev
+- You should see the following output
 ~~~~
 ==> Starting Consul agent...
 ==> Starting Consul agent RPC...
@@ -78,3 +79,9 @@ Available commands are:
 [INFO] consul: member 'Armons-MacBook-Air' joined, marking health alive
 [INFO] agent: Synced service 'consul'
 ~~~~
+
+**Next let's list cluster members**
+- $ consul members
+- Expected output 
+Node                Address            Status  Type    Build     Protocol  DC
+MyNode  172.20.20.11:8301  alive   server  0.6.1dev  2         dc1
