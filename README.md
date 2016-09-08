@@ -83,5 +83,8 @@ Available commands are:
 **Next let's list cluster members**
 - $ consul members
 - Expected output 
+
+~~~~
 Node                Address            Status  Type    Build     Protocol  DC
-MyNode  172.20.20.11:8301  alive   server  0.6.1dev  2         dc1
+MyNode  127.1.1.0:8400  alive   server  0.6.4 dev  2         dc1
+~~~~
